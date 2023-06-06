@@ -14,7 +14,7 @@ const Header = () => {
       <h3>User List</h3>
       <div className="header-search">
         <img src={searchIcon} alt="" />
-        <input type="text" placeholder="search..." />
+        <input type="text" placeholder="Search..." />
       </div>
       <div className="header-image">
         <img src={user?.avatar} alt="" />
