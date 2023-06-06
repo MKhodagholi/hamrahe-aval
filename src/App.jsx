@@ -1,7 +1,12 @@
 import React from "react";
+import UserManagementPage from "./pages/UserManagement/UserManagementPage";
 
 function App() {
-  return <>hello wolrd</>;
+  return (
+    <div>
+      <UserManagementPage />
+    </div>
+  );
 }
 
 export default App;
