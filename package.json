@@ -2,6 +2,7 @@
   "name": "hamrahe-aval-task",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://mkhodagholi.github.io/hamrahe-aval",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -16,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +41,7 @@
   },
   "devDependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "gh-pages": "^5.0.0",
     "react-redux": "^8.0.7",
     "styled-components": "^6.0.0-rc.3"
   }
