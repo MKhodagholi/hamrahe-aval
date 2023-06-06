@@ -32,6 +32,7 @@ const HeaderStyled = styled.header`
     }
     img {
       margin-right: 10px;
+      cursor: not-allowed;
     }
   }
 
