@@ -25,8 +25,13 @@ const UserListStyled = styled.div`
   }
 
   .titles {
+    position: sticky;
+    top: 0;
     display: flex;
     height: 50px;
+    border-bottom: 2px solid ${({ theme }) => theme.user.borderTitles};
+    font-weight: 500;
+    background-color: #fff;
   }
 
   .user-checkbox {

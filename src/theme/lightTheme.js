@@ -20,6 +20,7 @@ const lightTheme = {
   user: {
     background: clr_white,
     border: clr_gray30,
+    borderTitles: clr_gray70,
     text: clr_black80,
     title: clr_black90,
     status: { danger: clr_red, success: clr_green, warning: clr_yellow },
