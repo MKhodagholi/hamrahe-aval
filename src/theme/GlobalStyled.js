@@ -23,6 +23,9 @@ const GlobalStyled = createGlobalStyle`
     border: none;
     background-color: transparent;
     cursor: pointer;
+    &:disabled {
+      cursor: not-allowed;
+    }
   }
 
 `;
