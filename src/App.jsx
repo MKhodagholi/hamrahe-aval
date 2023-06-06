@@ -13,7 +13,7 @@ function App() {
     dispatch(fetchUsers(1));
   }, [dispatch]);
 
-  const themeMode = DARK_MODE;
+  const themeMode = LIGHT_MODE;
 
   const themUse =
     themeMode === DARK_MODE ? theme[DARK_MODE] : theme[LIGHT_MODE];

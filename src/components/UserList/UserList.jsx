@@ -4,7 +4,9 @@ import UserListStyled from "./UserListStyled";
 const UserList = ({ users }) => {
   return (
     <UserListStyled>
-      {users?.length > 0 ? users.map((user) => <User user={user} />) : null}
+      {users?.length > 0
+        ? users.map((user) => <User key={user.id} user={user} />)
+        : null}
     </UserListStyled>
   );
 };
