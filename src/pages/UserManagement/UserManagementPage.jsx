@@ -7,7 +7,7 @@ const UserManagementPage = () => {
 
   return (
     <UserManagementPageStyled>
-      <UserList users={users} />
+      <UserList users={[...users, ...users, ...users]} />
     </UserManagementPageStyled>
   );
 };

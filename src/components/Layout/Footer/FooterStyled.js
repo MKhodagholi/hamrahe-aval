@@ -4,10 +4,11 @@ const FooterStyled = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: ${({ theme }) => theme.footer.text};
+  height: 60px;
   padding: 14px 16px;
+  color: ${({ theme }) => theme.footer.text};
   border-top: 2px solid ${({ theme }) => theme.footer.border};
-  
+
   .footer-tools {
     display: flex;
     align-items: center;

@@ -13,6 +13,9 @@ const GlobalStyled = createGlobalStyle`
   html {
     font-family: "Poppins";
     font-size: 14px;
+    ::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
 `;
