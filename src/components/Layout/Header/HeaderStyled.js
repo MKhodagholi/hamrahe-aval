@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 
 const HeaderStyled = styled.header`
+  position: relative;
+  z-index: 10; // add for show box-shadow
   display: flex;
   align-items: center;
   justify-content: space-between;
