@@ -2,7 +2,7 @@
   "name": "hamrahe-aval-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mkhodagholi.github.io/hamrahe-aval",
+  "homepage": "https://mkhodagholi.github.io/hamrahe-aval",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
