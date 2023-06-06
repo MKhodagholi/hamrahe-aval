@@ -91,17 +91,21 @@ const UserListStyled = styled.div`
 
     .user-status {
       width: 15%;
-      &.danger p {
+      p {
         padding: 2px 10px;
         border-radius: 25px;
         color: #fff;
-        background-color: ${({ theme }) => theme.user.status.danger}
+      }
+      &.danger p {
+        background-color: ${({ theme }) => theme.user.status.danger};
       }
       &.success p {
-        background-color: ${({ theme }) => theme.user.status.success}
+        background-color: ${({ theme }) => theme.user.status.success};
+        color: #000;
       }
       &.warning p {
-        background-color: ${({ theme }) => theme.user.status.warning}
+        background-color: ${({ theme }) => theme.user.status.warning};
+        color: #000;
       }
     }
 

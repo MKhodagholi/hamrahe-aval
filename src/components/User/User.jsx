@@ -9,7 +9,28 @@ const User = ({ user }) => {
     avatar,
   } = user;
 
-  const userStatus = 'danger';
+  const userStatusArray = ["danger", "success", "warning"];
+
+  const userTtileArray = [
+    "CTO",
+    "Java Engineer",
+    "UI Engineer",
+    "CIO",
+    "VP",
+    "Helpdesk",
+    "Python Engineer",
+    "Tech Lead",
+  ];
+
+  const userAmountArray = [11.7, 5.22, 17.84, 14.81, 6.48, 8.99];
+
+  const nameLength = firstName.length;
+
+  const userAmount = userAmountArray[nameLength % userAmountArray.length];
+
+  const userTitle = userTtileArray[nameLength % userTtileArray.length];
+
+  const userStatus = userStatusArray[nameLength % userStatusArray.length];
 
   return (
     <UserStyled>
@@ -29,13 +50,13 @@ const User = ({ user }) => {
           <p>{email}</p>
         </div>
         <div className="user-title left">
-          <p>Project Manager</p>
+          <p>{userTitle}</p>
         </div>
         <div className="user-amount center">
-          <p>$11.70</p>
+          <p>${userAmount}</p>
         </div>
         <div className={`user-status center ${userStatus}`}>
-          <p>Danger</p>
+          <p>{userStatus}</p>
         </div>
       </div>
       <div className="user-action center">

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import UserManagementPage from "./pages/UserManagement/UserManagementPage";
 import { fetchUsers } from "./store/user-slice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
 
 import theme, { DARK_MODE, LIGHT_MODE } from "./theme/theme";
@@ -9,10 +9,11 @@ import GlobalStyled from "./theme/GlobalStyled";
 import Layout from "./components/Layout/Layout";
 
 function App() {
+  const { currentPage, userPerPage } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchUsers(1));
-  }, [dispatch]);
+    dispatch(fetchUsers({ page: currentPage, per_page: userPerPage }));
+  }, [currentPage, dispatch, userPerPage]);
 
   const themeMode = LIGHT_MODE;
 

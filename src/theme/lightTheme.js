@@ -10,9 +10,9 @@ const clr_black90 = "#343A40";
 
 const clr_blue = "#233EAE";
 
-const clr_green = "";
+const clr_green = "#34dc6c";
 
-const clr_yellow = "";
+const clr_yellow = "#d4dc34";
 
 const clr_red = "#DC3545";
 
