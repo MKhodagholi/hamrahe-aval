@@ -1,8 +1,20 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyled = createGlobalStyle`
-  // import google fonts {Roboto 400, 500 and Poppins 400}
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap');
+
+  // reset some values
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  // add global styles
+  html {
+    font-family: "Poppins";
+    font-size: 14px;
+  }
+
 `;
 
 export default GlobalStyled;
