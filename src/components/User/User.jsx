@@ -9,6 +9,8 @@ const User = ({ user }) => {
     avatar,
   } = user;
 
+  const userStatus = 'danger';
+
   return (
     <UserStyled>
       <div className="user-checkbox center">
@@ -32,7 +34,7 @@ const User = ({ user }) => {
         <div className="user-amount center">
           <p>$11.70</p>
         </div>
-        <div className="user-status center">
+        <div className={`user-status center ${userStatus}`}>
           <p>Danger</p>
         </div>
       </div>
