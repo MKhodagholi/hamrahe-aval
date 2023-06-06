@@ -94,10 +94,10 @@ const UserListStyled = styled.div`
       p {
         padding: 2px 10px;
         border-radius: 25px;
-        color: #fff;
       }
       &.danger p {
         background-color: ${({ theme }) => theme.user.status.danger};
+        color: #fff;
       }
       &.success p {
         background-color: ${({ theme }) => theme.user.status.success};
