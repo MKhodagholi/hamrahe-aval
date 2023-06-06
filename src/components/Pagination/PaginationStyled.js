@@ -10,6 +10,9 @@ const PaginationStyled = styled.div`
     color: ${({ theme }) => theme.pagination.text};
     border-radius: 2px;
     font-family: Poppins;
+    &:disabled {
+      cursor: not-allowed;
+    }
   }
 
   .caret {
@@ -27,9 +30,13 @@ const PaginationStyled = styled.div`
       background-color: ${({ theme }) => theme.pagination.active.background};
       color: ${({ theme }) => theme.pagination.active.text};
     }
-    button:not(.active):hover {
+    button:not(:disabled):not(.active):hover {
       border: 1px solid ${({ theme }) => theme.pagination.hover.border};
       color: ${({ theme }) => theme.pagination.hover.text};
+    }
+    button:disabled:not(.active):hover {
+      border: 1px solid ${({ theme }) => theme.pagination.disabled.border};
+      color: ${({ theme }) => theme.pagination.disabled.text};
     }
   }
 `;
