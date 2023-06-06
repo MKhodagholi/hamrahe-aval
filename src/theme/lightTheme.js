@@ -59,8 +59,10 @@ const lightTheme = {
   },
   tools: {
     addBtn: { background: clr_blue, text: clr_white },
+    icons: { hover: { background: clr_gray30 } },
   },
   error: clr_red,
+  success: clr_green,
 };
 
 export default lightTheme;
