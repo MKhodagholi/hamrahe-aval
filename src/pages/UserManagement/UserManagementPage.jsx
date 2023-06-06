@@ -11,13 +11,13 @@ import settingIcon from "../../assets/icons/settings.svg";
 import filterListIcon from "../../assets/icons/filter_list.svg";
 
 const UserManagementPage = () => {
-  const { users } = useSelector((state) => state.user);
+  const { users, totalUsers } = useSelector((state) => state.user);
 
   return (
     <UserManagementPageStyled>
       <ListToolsStyled>
         <div className="list-info">
-          <div className="all-select">All (56)</div>
+          <div className="all-select">All ({totalUsers})</div>
           <button>
             ADD NEW <img src={addIcon} alt="" />
           </button>
@@ -34,7 +34,7 @@ const UserManagementPage = () => {
           </button>
         </div>
       </ListToolsStyled>
-      <UserList users={[...users, ...users, ...users]} />
+      <UserList users={users} />
     </UserManagementPageStyled>
   );
 };
