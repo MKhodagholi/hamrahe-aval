@@ -52,10 +52,15 @@ const lightTheme = {
       border: clr_red,
       text: clr_red,
     },
+    disabled: {
+      border: clr_gray30,
+      text: clr_gray30,
+    },
   },
   tools: {
     addBtn: { background: clr_blue, text: clr_white },
   },
+  error: clr_red,
 };
 
 export default lightTheme;
