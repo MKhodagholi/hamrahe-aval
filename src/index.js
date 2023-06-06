@@ -17,6 +17,10 @@ const app = document.getElementById("app");
 
 const root = createRoot(app);
 
-root.render(<Provider store={store}></Provider>);
+root.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
 
 reportWebVitals();
