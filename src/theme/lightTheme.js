@@ -53,6 +53,9 @@ const lightTheme = {
       text: clr_red,
     },
   },
+  tools: {
+    addBtn: { background: clr_blue, text: clr_white },
+  },
 };
 
 export default lightTheme;

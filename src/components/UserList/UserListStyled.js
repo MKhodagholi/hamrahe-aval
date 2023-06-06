@@ -26,7 +26,7 @@ const UserListStyled = styled.div`
 
   .titles {
     position: sticky;
-    top: 0;
+    top: 85px;
     display: flex;
     height: 50px;
     border-bottom: 2px solid ${({ theme }) => theme.user.borderTitles};

@@ -18,6 +18,13 @@ const GlobalStyled = createGlobalStyle`
     }
   }
 
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
 `;
 
 export default GlobalStyled;

@@ -5,7 +5,7 @@ const LayoutStyled = styled.div`
   overflow: hidden;
 
   .content {
-    height: calc(100vh - 130px); // 70px header, 60px footer
+    height: calc(100vh - 130px); // 70px header, 60px footer,
     overflow: auto;
     overflow-x: hidden;
   }

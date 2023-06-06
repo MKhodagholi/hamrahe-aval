@@ -5,14 +5,11 @@ const PaginationStyled = styled.div`
   button {
     width: 30px;
     height: 30px;
-    border: none;
-    outline: none;
+    margin-right: 10px;
     background-color: transparent;
-    font-family: Poppins;
     color: ${({ theme }) => theme.pagination.text};
     border-radius: 2px;
-    cursor: pointer;
-    margin-right: 10px;
+    font-family: Poppins;
   }
 
   .caret {
