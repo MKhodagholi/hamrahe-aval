@@ -39,6 +39,20 @@ const lightTheme = {
       text: clr_black90,
     },
   },
+  pagination: {
+    text: clr_black80,
+    caret: {
+      background: clr_gray70,
+    },
+    active: {
+      background: clr_red,
+      text: clr_white,
+    },
+    hover: {
+      border: clr_red,
+      text: clr_red,
+    },
+  },
 };
 
 export default lightTheme;

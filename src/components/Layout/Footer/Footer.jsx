@@ -1,3 +1,4 @@
+import Pagination from "../../Pagination/Pagination";
 import FooterStyled from "./FooterStyled";
 
 const Footer = () => {
@@ -10,7 +11,9 @@ const Footer = () => {
         <div className="display-number">
           Display <input type="number" />
         </div>
-        <div className="footer-pagination">Pagination</div>
+        <div className="footer-pagination">
+          <Pagination />
+        </div>
       </div>
     </FooterStyled>
   );
