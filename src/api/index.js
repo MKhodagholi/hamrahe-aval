@@ -5,9 +5,22 @@ const GET_CONFIG = {
   headers: { "Content-Type": "application/json" },
 };
 
-const BASE_URL = "https://reqres.in/";
+const POST_CONFIG = {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+};
+
+const PUT_CONFIG = {
+  method: "PUT",
+  headers: { "Content-Type": "application/json" },
+};
+
+const DELETE_CONFIG = {
+  method: "DELETE",
+  headers: { "Content-Type": "application/json" },
+};
 
 const API = { user: USER_API };
 
-export { BASE_URL, GET_CONFIG };
+export { GET_CONFIG, POST_CONFIG, PUT_CONFIG, DELETE_CONFIG };
 export default API;
