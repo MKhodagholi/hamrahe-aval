@@ -7,19 +7,22 @@ const initialState = {
   userPerPage: 6,
   totalUsers: 12,
   loading: false,
+  currentPage: 1,
   error: { exist: false, message: "" },
 };
 
 export const fetchUsers = createAsyncThunk(
   "user/fetchUsers",
-  async (page, { dispatch }) => {
+  async ({ page, per_page }, { dispatch }) => {
     dispatch(userActions.changeLoading(true));
     try {
-      const res = await axios.get(API.user.fetchUsers(page), GET_CONFIG);
+      const res = await axios.get(
+        API.user.fetchUsers(page, per_page),
+        GET_CONFIG
+      );
       const data = res.data;
       const users = data.data;
-      const userPerPage = data.per_page;
-      dispatch(userActions.saveUsers({ users, userPerPage }));
+      dispatch(userActions.saveUsers({ users }));
       dispatch(userActions.changeLoading(false));
     } catch (error) {
       dispatch(userActions.changeLoading(false));
@@ -33,11 +36,9 @@ const userSlice = createSlice({
   reducers: {
     saveUsers(state, action) {
       // action.payload: {users: Array<User>, userPerPage: number}
-      const { users, userPerPage } = action.payload;
+      const { users } = action.payload;
 
       state.users = users;
-      state.totalUsers = users.length;
-      state.userPerPage = userPerPage;
     },
     changeLoading(state, action) {
       // action.payload: false | true
@@ -46,6 +47,12 @@ const userSlice = createSlice({
     changeError(state, action) {
       // action.payload: {exist: false | true, message: string}
       state.error = action.payload;
+    },
+    changeCurrentPage(state, action) {
+      state.currentPage = action.payload;
+    },
+    changeUserPerPage(state, action) {
+      state.userPerPage = action.payload;
     },
   },
 });
