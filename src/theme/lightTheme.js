@@ -30,6 +30,14 @@ const lightTheme = {
       placeholder: clr_gray50,
     },
   },
+  footer: {
+    text: clr_black80,
+    border: clr_gray70,
+    input: {
+      border: clr_gray70,
+      text: clr_black90,
+    },
+  },
 };
 
 export default lightTheme;
