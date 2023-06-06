@@ -29,6 +29,9 @@ const FooterStyled = styled.footer`
         &:focus {
           outline: none;
         }
+        &.error {
+          border-color: ${({ theme }) => theme.error};
+        }
       }
     }
   }
