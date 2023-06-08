@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/hamrahe-aval/static/js/main.b725610c.js",
+    "main.js": "/hamrahe-aval/static/js/main.615d8ebd.js",
     "static/js/787.4b273b46.chunk.js": "/hamrahe-aval/static/js/787.4b273b46.chunk.js",
     "static/media/settings.svg": "/hamrahe-aval/static/media/settings.a169bc1b3398943829dd072ed24db4ee.svg",
     "static/media/edit.svg": "/hamrahe-aval/static/media/edit.b833f5b1d402d421ab164808c0068f4b.svg",
@@ -11,10 +11,10 @@
     "static/media/add.svg": "/hamrahe-aval/static/media/add.9bea56e8a15ebf27b5aa46d6f5ed10ee.svg",
     "static/media/filter_list.svg": "/hamrahe-aval/static/media/filter_list.28282d56a4c5a596eb0b901aea8f5548.svg",
     "static/media/prev-caret.svg": "/hamrahe-aval/static/media/prev-caret.c56578fc59329aefba316ce926828c81.svg",
-    "main.b725610c.js.map": "/hamrahe-aval/static/js/main.b725610c.js.map",
+    "main.615d8ebd.js.map": "/hamrahe-aval/static/js/main.615d8ebd.js.map",
     "787.4b273b46.chunk.js.map": "/hamrahe-aval/static/js/787.4b273b46.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b725610c.js"
+    "static/js/main.615d8ebd.js"
   ]
 }
