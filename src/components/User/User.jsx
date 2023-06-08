@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import UserStyled, { ModalDeleteStyled } from "./UserStyled";
 
@@ -42,10 +42,10 @@ const User = ({ user }) => {
 
   const titlesLength = userTtileArray.length;
 
-  const randomNumber = randomIntFromInterval(0, titlesLength - 1);
+  const randomNumber = useRef(randomIntFromInterval(0, titlesLength - 1));
 
-  const userAmount = userAmountArray[randomNumber];
-  const userTitle = userTtileArray[randomNumber];
+  const userAmount = userAmountArray[randomNumber.current];
+  const userTitle = userTtileArray[randomNumber.current];
 
   console.log(userAmount);
 
